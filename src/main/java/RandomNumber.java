@@ -72,7 +72,7 @@ public class RandomNumber {
                 if (lo > hi)
                         throw new InvalidOperationException(
                                 "invalid range: " + lo + " > " + hi);
-                return (int) (nextDoubleRand() * (hi - lo + 1)  + lo);
+                return (int) (nextDoubleRand() * (hi - lo) + lo);
         }
 }
 
