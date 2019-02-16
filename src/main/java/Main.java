@@ -22,25 +22,17 @@ import java.util.NoSuchElementException;
 			String accStr;
 			String choice;
 
-			if (args.length == 0) {
-				accStr = "5";
-				choice = "1";
+			System.out.println("Enter your string of numbers or just one number:");
+			accStr = br.readLine();
 
-			}
-			else{
+			System.out.println("Initial String: ");
+			System.out.println(accStr);
 
-				System.out.println("Enter your string of numbers or just one number:");
-				accStr = br.readLine();
-
-				System.out.println("Initial String: ");
-				System.out.println(accStr);
-
-				System.out.println("Algorithm Codes :\n"
-						+ "0 (Power Set 1) \t 1 (Power Set  2) \t 2 (Power Set  3)\n");
-				System.out.println("Enter selected algorithm code :");
-				choice = br.readLine();
-
-			}
+			System.out.println("Algorithm Codes :\n"
+					+ "0 (Power Set 1) \t 1 (Power Set  2) \t 2 (Power Set  3)\n");
+			System.out.println("Enter selected algorithm code :");
+			choice = br.readLine();
+				
 			PowerSetData data = new PowerSetData();
 
 			try {
